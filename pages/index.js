@@ -31,10 +31,7 @@ export default function Home() {
     let arr = [];
     for (let i = -5; i <= 5; i += 0.25) {
       if (Number.isInteger(i)) {
-        arr.push(i);
-        arr.push(i);
-        arr.push(i);
-        arr.push(i);
+        arr.push(...Array.from(15).fill(i));
       }
       arr.push(i);
     }
